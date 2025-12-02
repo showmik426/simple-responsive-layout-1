@@ -14,7 +14,19 @@
             color: black;
         
         }
-
+        .login-form-container{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-form input{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -27,5 +39,13 @@
        </div>
        <a href="">Login</a> 
     </nav>
+    <div class="login-form-container">
+        <form class="login-form">
+        <h3>Please Log in</h3>
+        <input type="email" name="" id="" placeholder="Your Email" required>
+        <input type="password" name="" id="" placeholder="Your Password">
+        <input type="submit" value="Login">
+    </form>
+    </div>
 </body>
 </html>
